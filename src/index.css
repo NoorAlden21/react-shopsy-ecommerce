@@ -1,0 +1,14 @@
+@custom-variant dark (&:where(.dark, .dark *));
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fea928;
+  --color-secondary: #ed8900;
+  --container-padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  @theme {
+    --container-padding: 3rem;
+  }
+}
